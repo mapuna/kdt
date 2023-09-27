@@ -4,7 +4,7 @@ from line_profiler import profile
 
 
 @profile
-def closest_point(all_p: np.array, new_p: np.array) -> tuple:
+def all_pair_search(all_p: np.array, new_p: np.array) -> np.array:
     assert all_p.shape[1] == new_p.shape[0]
     distances, _ = l2_distance(all_p, new_p)
     min_dist_index = np.argmin(distances)
