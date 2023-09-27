@@ -18,10 +18,3 @@ def generate_query_point() -> np.array:
     return np.array(
         [random.uniform(0, IMAGE_SIZE[0]), random.uniform(0, IMAGE_SIZE[1])]
     )
-
-
-if __name__ == "__main__":
-    from rich import print
-
-    print(generate_data())
-    print(generate_query_point())
